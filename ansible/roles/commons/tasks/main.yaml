@@ -1,7 +1,7 @@
-- name: Ensure system is updated
+- name: "Actualizando sistema"
   apt: update_cache=yes upgrade=yes
 
-- name: clave pub 
+- name: "Pasando clave pública" 
   authorized_key:
     user: vagrant
     state: present
